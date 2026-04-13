@@ -1,0 +1,29 @@
+# ── Web Framework ─────────────────────────────────────────────────────────
+fastapi==0.115.6
+uvicorn[standard]==0.32.1
+python-multipart==0.0.20     # 文件上传必需
+
+# ── Database ──────────────────────────────────────────────────────────────
+sqlalchemy[asyncio]==2.0.36
+asyncpg==0.30.0              # PostgreSQL 异步驱动
+pgvector==0.3.6              # pgvector SQLAlchemy 集成
+
+# ── Config ────────────────────────────────────────────────────────────────
+pydantic-settings==2.7.0
+python-dotenv==1.0.1
+
+# ── OpenAI ────────────────────────────────────────────────────────────────
+openai==1.58.1
+
+# ── File Parsing ──────────────────────────────────────────────────────────
+PyMuPDF==1.25.1              # PDF 解析
+python-docx==1.1.2           # Word 解析
+openpyxl==3.1.5              # Excel 解析
+pandas==2.2.3                # Excel / CSV 处理
+
+# ── Async File I/O ────────────────────────────────────────────────────────
+aiofiles==24.1.0
+
+# ── Optional: Local Embedding（如使用 EMBEDDING_PROVIDER=local 时安装）────
+# sentence-transformers==3.3.1
+
